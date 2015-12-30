@@ -1,7 +1,7 @@
 class InvalidTableException(Exception):
     pass
 
-class UnsolvablePuzzleException(Exception):
+class DoubledSolutionPuzzleException(Exception):
     pass
 
 def print_table(table, coloured=True):

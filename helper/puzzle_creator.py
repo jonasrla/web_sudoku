@@ -1,6 +1,6 @@
 from random import randint
-from solution_creator import *
 from _utils import *
+from solver import *
 
 def create_puzzle(level):
     puzzle = get_solution()

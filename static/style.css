@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Philosopher:700|Noto+Serif);
+
+body{
+	background: #97EE80;
+	display: table;
+	width: calc( 100% - 10px);
+	height: 100%;
+}
+
+h1{
+	color: #00635C;
+	font-family: Philosopher, sans-serif;
+	font-size: 80px;
+	margin: 0px;
+	float: left;
+}
+
+.level, .cell, .fill{
+	font-family: Noto Serif, Serif;
+}
+
+ul li.level {
+    display:inline-block;
+    list-style-type:none;
+}
+
+ul li.level { display: inline-block; zoom: 1; *display: inline; }
+
+ul li.fill {
+	list-style-type:none;
+}
+
+.level{
+	-webkit-border-radius: 20px 20px 20px 20px;
+	border-radius:20px 20px 20px 20px;
+	background-color: #40B8AF;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	color: #73D5CE;
+	font-size: 27px;
+}
+
+.levels{
+	padding: 0px;
+	margin-top: 31px;
+	margin-left: 270px;
+
+}
+
+.dark, .light{
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 40px;
+	color: #729900;
+}
+
+.dark{
+	background-color: #CDF655;
+}
+.light{
+	background-color: #DCF986;
+}
+
+.puzzle {
+	float: left;
+}
+
+.fill{
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 30px;
+	color: #729900;
+	padding-bottom: 15px;
+}
+
+.header-wrap, .control-wrap{
+	position: relative;
+	left: 50%;
+	display: inline-block;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+
+}
+
+.selector{
+	margin-top: 7px;
+	padding: 0px;
+}

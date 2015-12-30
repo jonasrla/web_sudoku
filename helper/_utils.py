@@ -14,7 +14,7 @@ def print_table(table, coloured=True):
     size = len(table)
     try:
         for line in table:
-            print  " ".join([(green if i["checked"] else red) + "%s" + end for i in line]) % tuple([elem["possibilities"] for elem in line])
+            print  " ".join([(green if i["checked"] else red) + "%s" + end for i in line]) % tuple([(elem["possibilities"] if len(elem["possibilities"]) <= 1 else "[ ]") for elem in line])
     except Exception:
         for line in table:
             print "%s "*9 % tuple(line)

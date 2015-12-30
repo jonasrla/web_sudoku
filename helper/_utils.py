@@ -26,3 +26,6 @@ def copy_table(table):
 def clear_table(table):
     size = len(table)
     return [{i:table[j][i]["possibilities"][0] for i in xrange(size)} for j in xrange(size)]
+
+def format(table):
+    return [[{"possibilities": [table[j][i]] if table[j][i] else range(1,10), "checked": False} for i in xrange(9)] for j in xrange(9)]

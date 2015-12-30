@@ -4,6 +4,9 @@ class InvalidTableException(Exception):
 class DoubledSolutionPuzzleException(Exception):
     pass
 
+def new_table():
+    return [[{"possibilities": range(1,10), "checked": False} for i in xrange(9)] for j in xrange(9)]
+
 def print_table(table, coloured=True):
     green = "\033[92m"
     red = "\033[91m"

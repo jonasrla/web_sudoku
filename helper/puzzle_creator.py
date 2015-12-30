@@ -3,10 +3,11 @@ from _utils import *
 from solver import *
 
 def create_puzzle(level):
-    puzzle = get_solution()
+    t = new_table()
+
+    puzzle = solve(t)
 
     (min_given, lower_bound, dig_interator) = _get_parameters(level)
-
 
     for i,j in dig_interator:
         if _given(puzzle) - 1 >= min_given:
